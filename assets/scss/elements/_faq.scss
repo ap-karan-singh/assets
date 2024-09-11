@@ -1,0 +1,68 @@
+// faq area start
+.rts-faq-area-1 {
+    .question-and-answer-area {
+        max-width: 870px;
+        margin: auto;
+
+        .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 30px;
+            overflow: hidden;
+            background: linear-gradient(180deg, #0677E7 0%, #0C3DF8 100%);
+            border-radius: 30px;
+            border: 1px solid #DCDCDC;
+
+            .accordion-header {
+                border: none;
+                box-shadow: none;
+
+                button {
+                    padding: 30px 50px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    border: none;
+                    box-shadow: none;
+
+                    @media #{$large-mobile} {
+                        padding: 30px 30px;
+                    }
+
+                    &::after {
+                        background-image: none;
+                        content: '\f078';
+                        font-family: var(--font-3);
+                    }
+
+                    &[aria-expanded="true"] {
+                        background: #0C3DF8;
+                        color: #fff;
+
+                        &::after {
+                            background-image: none;
+                            content: '\f078';
+                            font-family: var(--font-3);
+                        }
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                &.show {
+                    background: #0C3DF8;
+                    color: #EBEBEB;
+                }
+            }
+
+            .accordion-body {
+                padding: 0 40px 40px 50px;
+                transition: 0s;
+                background: #0C3DF8;
+                color: #fff;
+
+                @media #{$large-mobile} {
+                    padding: 0 30px 20px 30px;
+                }
+            }
+        }
+    }
+}

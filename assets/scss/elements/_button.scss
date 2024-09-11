@@ -1,0 +1,32 @@
+// button style here
+
+.rts-btn {
+    padding: 13px 27px;
+    display: block;
+    min-width: max-content;
+    max-width: max-content;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: .3s;
+
+    &.btn-primary {
+        background: #493BEB;
+        border: 1px solid transparent;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #C8C8C8;
+            color: var(--color-body);
+        }
+    }
+
+    &.btn-border {
+        border: 1px solid #5555;
+
+        &:hover {
+            background: #493BEB;
+            border: 1px solid var(--color-primary);
+            color: #fff;
+        }
+    }
+}

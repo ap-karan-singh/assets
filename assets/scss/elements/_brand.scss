@@ -1,0 +1,45 @@
+// brand area start
+.brand-area-wrapper {
+    text-align: center;
+
+    .title-brand {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .brand-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.brand-area-start {
+    text-align: center;
+
+    .title {
+        p {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 25px;
+        }
+    }
+
+    .brand-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media #{$mdsm-layout} {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        img {
+            @media #{$large-mobile} {
+                max-width: 100px;
+            }
+        }
+    }
+}

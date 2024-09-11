@@ -1,0 +1,118 @@
+// feature area style
+
+
+.large-iamge-thumbnail-feature {
+    margin-left: -70px;
+    position: relative;
+    max-width: max-content;
+
+    @media #{$laptop-device} {
+        margin-left: 0;
+    }
+
+    @media #{$md-layout} {
+        margin-left: 0;
+    }
+
+    @media #{$mdsm-layout} {
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    @media #{$sm-layout} {
+        margin-left: 0;
+    }
+
+    .front-iamge-featue {
+        img {
+            min-width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media #{$md-layout} {
+                min-width: auto;
+            }
+
+            @media #{$sm-layout} {
+                min-width: auto;
+            }
+        }
+    }
+
+    @media #{$large-mobile} {
+        margin-left: 10px;
+    }
+}
+
+.feature-area-right {
+    .title {
+        color: #272A6C;
+        font-size: 60px;
+
+        @media #{$md-layout} {
+            font-size: 42px;
+        }
+
+        @media #{$sm-layout} {
+            font-size: 36px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @media #{$large-mobile} {
+            font-size: 24px;
+        }
+    }
+
+    p.disc {
+        @media #{$sm-layout} {
+            max-width: 100% !important;
+        }
+    }
+
+    .feature-wrapper {
+        margin-bottom: 35px;
+
+        .single-feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 9px 0;
+
+            .icon {
+                i {
+                    color: #555BFF;
+                    height: 22px;
+                    width: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #555bff23;
+                    border-radius: 8px;
+                    font-size: 14px;
+                }
+            }
+
+            p {
+                margin: 0;
+                color: #272A6C;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.rts-service-area {
+    position: relative;
+
+    .rts-left-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
